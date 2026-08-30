@@ -1,0 +1,315 @@
+@charset "utf-8";
+html {
+ scroll-behavior: smooth;
+}
+body {
+ font-size: 25px;
+ color: rgba(255, 255, 255, 0.664);
+ font-family: "Shippori Mincho", serif;
+ font-weight: 400;
+ font-style: normal;
+ background-image: linear-gradient(180deg, black 0%, gray 100%);
+}
+.innerWrap {
+ width: 1240px;
+ margin: 0 auto;
+}
+.topWrap {
+ opacity: 0.9;
+ height: 1200px;
+ background: url(../image/pic08.JPG) no-repeat right center/cover;
+ animation: appear 1s ease-in 0s;
+ padding-top: 60px;
+}
+ul.topNav {
+ color: black;
+ display: flex;
+ justify-content: center;
+ text-transform: capitalize;
+ padding: 10px 0;
+ width: 1000px;
+ opacity: 0.7;
+ margin: 0 auto;
+ animation: appear 12s ease 0s;
+ position: fixed;
+ background-color: rgba(43, 43, 46);
+ box-shadow: 0 0 9px 9px rgba(43, 43, 46);
+ top: 0;
+ left: 0;
+ width: 100%;
+ z-index: 100;
+}
+.topNav li {
+ padding: 5px 25px 5px;
+}
+.topNav li:hover {
+ filter: drop-shadow(0 0 3px rgb(67, 109, 223));
+ color: white;
+}
+.topPics li img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ opacity: 0.2;
+
+}
+.letters {
+ position: relative;
+ height: 140px;
+ margin: 80px 0 0;
+}
+.letters .pp01 {
+ margin-bottom: 20px;
+ opacity: 0.2;
+ position: absolute;
+ top: 0;
+ left: 10%;
+ font-size: 30px;
+ filter: blur(1px);
+ animation: blur 2s ease 0s;
+}
+.letters .pp02 { 
+ opacity: 0.3;
+ position: absolute;
+ top: 30%;
+ left: 30%;
+ font-size: 25px;
+ filter: blur(1px);
+ animation: blur 3s ease 0s;
+}
+.letters .pp03 {
+ opacity: 0.2;
+ position: absolute;
+ top: 40%;
+ left: 45%;
+ font-size: 40px;
+ filter: blur(1px);
+ animation: blur 5s ease 0s;
+}
+h1 {
+ font-size: 150px;
+ text-transform: capitalize;
+ background-image: linear-gradient(270deg, black 0%, white 100%);
+ -webkit-background-clip: text;
+ -moz-background-clip: text;
+ background-clip: text;
+ color: transparent;
+ font-weight: bold;
+ text-align: center;
+ padding: 15px 0;
+ animation: blur 7s ease 0s;
+}
+h2 {
+ color: black;
+ font-size: 30px;
+ font-weight: bold;
+ text-align: center;
+ padding: 40px;
+ animation: appear 10s ease-in 0s;
+}
+h2 span {
+ font-size: 20px;
+ text-transform: uppercase;
+}
+.castName {
+ display: flex;
+ justify-content: space-evenly;
+ width: 700px;
+ margin: 0 auto;
+}
+.castName p {
+ font-size: 13px;
+ animation: appear 7.5s ease-in 0s;
+}
+.topic {
+ text-align: center;
+}
+section {
+ margin: 400px 0 200px;
+}
+h3 {
+ font-size: 50px;
+ margin: 200px 0 150px;
+ text-transform: capitalize;
+ letter-spacing: .07em;
+}
+.intro p {
+ font-size: 20px;
+ padding: 10px;
+ line-height: 5;
+ letter-spacing: .07em;
+}
+.intro span {
+ font-size: 10px;
+}
+.story p {
+ font-size: 18px;
+ line-height: 3;
+ letter-spacing: .05em;
+}
+.castWrap {
+ display: flex;
+ justify-content: center;
+}
+.act {
+ width: 30%;
+}
+.act img {
+ width: 200px;
+ height: 270px;
+ object-fit: cover;
+ opacity: 0.3;
+}
+.act span {
+ font-size: 12px;
+}
+.act p {
+ padding: 5px;
+}
+.actor {
+ background-color: rgb(54, 52, 52);
+ box-shadow: 0 0 30px 30px rgb(54, 52, 52);
+ border-radius: 50%;
+ width: 80%;
+ margin: 0 auto;
+}
+.word01 {
+ font-size: 12px;
+}
+.word02 {
+ font-size: 20px;
+}
+.word03 {
+ font-size: 13px;
+ width: 230px;
+ margin: 0 auto;
+}
+.staff p {
+ padding: 20px;
+}
+.staff p.line01 {
+ font-size: 15px;
+}
+.staff p.line02 {
+ font-size: 30px;
+}
+.staff p.line03 {
+ font-size: 20px;
+ width: 1000px;
+ margin: 0 auto;
+ line-height: 1.8;
+}
+.theaterList {
+ display: flex;
+ justify-content: space-around;
+ width: 80%;
+ margin: 0 auto;
+ padding: 25px;
+ background-color: rgba(43, 43, 46, 0.726);
+ box-shadow: 0 0 9px 9px rgba(43, 43, 46, 0.726);
+ margin-bottom: 50px;
+}
+table {
+ font-size: 15px;
+ padding: 20px 0;
+ width: 80%;
+ margin: 0 auto 50px;
+}
+.theater p {
+ width: 80%;
+ margin: 0 auto 5px;
+ text-align: left;
+}
+th, td {
+ border-bottom: 2px solid;
+ text-align: center;
+ padding: 10px 0;
+}
+.theater a {
+ text-decoration: underline;
+ color: lightblue;
+}
+/*グリッドの設定*/
+.trailerPic {
+ display: grid;
+ justify-content: center;
+ overflow: hidden;
+ grid-template-rows: 300px 300px 300px 300px 300px;
+ grid-template-columns: 30% 30% 30%;
+}
+.trailerPic li {
+ padding: 20px;
+}
+.trailerPic li img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover; 
+ border-radius: 3px;
+}
+.item01 {
+ grid-row: 1/2;
+ grid-column: 1/3;
+}
+.item02 {
+ grid-row: 1/2;
+ grid-column: 3/4;
+}
+.item03 {
+ grid-row: 2/4;
+ grid-column: 1/2;
+}
+.item04 {
+ grid-row: 2/3;
+ grid-column: 2/4;
+}
+.item05 {
+ grid-row: 3/4;
+ grid-column: 2/4;
+}
+.item06 {
+ grid-row: 4/5;
+ grid-column: 1/3;
+}
+.item06 img {
+ object-position: 0 40%;
+}
+.item07 {
+ grid-row: 4/6;
+ grid-column: 3/4;
+}
+.item08 {
+ grid-row: 5/6;
+ grid-column: 1/2;
+}
+.item09 {
+ grid-row: 5/6;
+ grid-column: 2/3;
+}
+.item09 img {
+ object-position: 0 100%;
+}
+/*アニメーション*/
+@keyframes fade-in {
+ 0% {
+  transform: translateX(100%);
+ }
+ 100% {
+  transform: translateX(0%);
+ }
+}
+@keyframes blur {
+ 0% {
+  filter: blur(30px)
+ }
+ 100% {
+  filter: blur(1px);
+ }
+}
+@keyframes appear {
+ 0% {
+  filter: blur(50px);
+ }
+ 100% {
+  filter: blur(0.9px);
+ }
+}
